@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .box{
+                 width: 150px;
+                height: 150px;
+                background-color: green;
+                margin: 50px;
+                border-radius: 10px;
+                border: 5px solid yellow;
+                  position: relative;
+                animation-name: code;
+                animation-duration: 10s;
+                animation-delay: 0s;
+                 /* animation-iteration-count:infinite; */
+                animation-iteration-count:1;
+                animation-timing-function: ease-out;
+                 /* animation-direction: reverse; */
+                animation-direction: alternate-reverse;
+                animation-fill-mode: backwards;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                background-color:blanchedalmond;
+                border: 5px solid red;
+            }
+           /* @keyframes code{
+                from{
+              top: 0;
+              left: 0;
+                }
+                to{
+              top: 500px;
+              left: 1200px;
+                } */
+             @keyframes code {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 1000px; /* move right */
+  }
+  50% {
+    top: 500px;
+    left: 1000px; /* move down */
+  }
+  75% {
+    top: 500px;
+    left: 0; /* move left */
+  }
+  100% {
+    top: 0;
+    left: 0; /* back to top */
+  }
+}
+                
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+        
+    </body>
+</html>
