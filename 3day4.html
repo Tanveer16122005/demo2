@@ -43,11 +43,16 @@
             transform: rotateZ(50deg);
         }
         #scaleX:hover{
-            transform: scaleX(50deg);
+            transform: scaleX(3);
         }
         #scaleY:hover{
-            transform: scaleY(50deg);
+            transform: scaleY(2);
         }
+         #scaleZ:hover{
+        transform:perspective(300px) scale(2) rotate(45deg);
+        }
+      #translateZ:hover{
+            transform:perspective(500px) translateZ(300px) ;}
     </style>
     <body>
         <div class="container">
@@ -58,6 +63,8 @@
         <div class="box" id="scaleY"> scaleY</div>
         <div class="box" id="rotateY">rotateY</div>
         <div class="box" id="rotateZ">rotateZ</div>
-        </div>
+        <div class="box" id="scaleZ">scaleZ</div>
+        <div class="box" id="translateZ">translateZ</div>        
+    </div>
      </body>
 </html>

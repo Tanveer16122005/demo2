@@ -7,8 +7,9 @@
             *{
                 margin: 0px;
                 padding: 0px;
+                box-sizing: border-box;
             }
-            .body{
+            body{
                 height: 100vh;
                 width: 100vh;
             }
@@ -25,28 +26,58 @@
                 row-gap: 10px;
             }
             .cont{
-                /* height: 100%;
-                width: auto; */
+                height: 100%;
+                width: 100%;
                 background-color: palegreen;
             }
             .cont1{
                 grid-column-start: 1;
                 grid-column-end: 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-            .count2{
+            .cont2{
                 grid-row-start: 2;
                 grid-row-end: 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .cont3{
+                grid-column-start: 2;
+                grid-column-end: 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .cont6{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .cont4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .cont5{
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         </style>
     </head>
     <body> 
         <div class="container">
-            <div class="cont cont1">container1</div>
-            <div class="cont cont2">container2</div>
+            <div class="cont cont1">header</div>
+            <div class="cont cont2">sidebar</div>
             <div class="cont cont3">container3</div>
             <div class="cont cont4">container4</div>
             <div class="cont cont5">container5</div>
-            <div class="cont cont6">container6</div>
+            <div class="cont cont6">footer</div>
         </div>
     </body>
 </html>
